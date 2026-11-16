@@ -9,7 +9,10 @@
 ## 使用
 
 需要 Python 3、PyYAML，运行 `./sync.py`。
+dotfile_refer.yaml中包含需要备份的配置文件目录和需要过滤的文件类型.
+*注意sync.py, dotfile_refer.yaml为ai生成
+*注意配置仅供参考
 
 ## 致谢
 
-Fcitx5 主题来自 [fovlin/fcitx5-theme-acovia](https://github.com/fovlin/fcitx5-theme-acovia)。其余配置为手写或自动生成。
+Fcitx5 主题来自 [fovlin/fcitx5-theme-acovia](https://github.com/fovlin/fcitx5-theme-acovia)
