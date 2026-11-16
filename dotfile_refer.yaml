@@ -1,0 +1,150 @@
+version: 1
+
+# Each source is one copy task. Its archive path is the source path below data/.
+sources:
+  # Shell and user-level configuration files
+  - /home/Ervn/.bashrc
+  - /home/Ervn/.bash_profile
+  - /home/Ervn/.bash_logout
+  - /home/Ervn/.gitconfig
+  - /home/Ervn/.gtkrc-2.0
+  - /home/Ervn/.config/environment.d/val.conf
+  - /home/Ervn/.config/mimeapps.list
+
+  # Terminal, shell, and window configuration
+  - /home/Ervn/.config/fish
+  - /home/Ervn/.config/kitty
+  - /home/Ervn/.config/yazi
+  - /home/Ervn/.config/umbriel
+  - /home/Ervn/.config/mpv
+  - /home/Ervn/.config/tmux
+
+  # Editors and command-line tools
+  - /home/Ervn/.config/nvim
+  - /home/Ervn/.config/micro
+  - /home/Ervn/.config/lazygit
+  - /home/Ervn/.config/bat
+  - /home/Ervn/.config/glow
+  - /home/Ervn/.config/go-musicfox
+  - /home/Ervn/.config/htop/htoprc
+
+  # Appearance, input method, and desktop integration
+  - /home/Ervn/.config/fcitx5
+  - /home/Ervn/.local/share/fcitx5/themes
+  - /home/Ervn/.local/state/noctalia/settings.toml
+  - /home/Ervn/.config/fastfetch
+  - /home/Ervn/.config/btop
+  - /home/Ervn/.config/bottom
+  - /home/Ervn/.config/gtk-3.0
+  - /home/Ervn/.config/gtk-4.0
+  - /home/Ervn/.config/qt5ct
+  - /home/Ervn/.config/qt6ct
+  - /home/Ervn/.config/xdg-desktop-portal
+  - /home/Ervn/.config/nwg-look
+  - /home/Ervn/.config/opencode/themes/matugen.json
+
+  # Hardware and system configuration
+  - /etc/default/grub
+  - /etc/environment
+  - /etc/nbfc/nbfc.json
+  - /etc/systemd/logind.conf
+  - /etc/systemd/logind.conf.d
+  - /etc/systemd/sleep.conf
+  - /usr/share/nbfc/configs/MECHREVO Wujie 14 Performance.json
+  - /usr/share/nbfc/configs/MECHREVO Wujie 14 Silence.json
+
+# Global skip rules. Matching is case-sensitive and applies to every path
+# component and to the source-relative path.
+blacklist:
+  # Version-control and runtime artifacts
+  - .git
+  - __pycache__
+  - "*.pyc"
+  - "*.bak"
+  - "*.bak.*"
+  - "*~"
+  - "*.log"
+  - "*.pid"
+  - "*.lock"
+
+  # Credentials, keys, and secrets
+  - .ssh
+  - .gnupg
+  - .pki
+  - .aws
+  - .netrc
+  - .npmrc
+  - .claude.json
+  - ".env"
+  - ".env.*"
+  - "*.pem"
+  - "*.key"
+  - "*.p12"
+  - "id_rsa*"
+  - "id_ed25519*"
+  - ai_api_keys.conf
+  - auth.json
+  - credentials.json
+  - service.json
+  - "secrets.*"
+  - "tokens.*"
+  - keyrings
+  - password-store
+
+  # Shell, input-method, and editor runtime data
+  - fish_variables
+  - htop_history
+  - "user.dict"
+  - "user.history"
+  - "*.history"
+  - "conf/cached_layouts"
+  - backups
+  - buffers
+
+  # Browser, chat, and account-state data
+  - Bitwarden CLI
+  - Code
+  - Codex
+  - QQ
+  - google-chrome
+  - zen
+  - bilibili-tui
+  - dsh-pet-electron-helper
+  - ".vscode"
+  - ".codex"
+  - ".claude"
+  - ".copilot"
+  - ".steam"
+  - Cookies
+  - Cookies-journal
+  - "Local State"
+  - "Network Persistent State"
+  - Preferences
+  - "Login Data"
+  - "Web Data"
+  - History
+  - Bookmarks
+
+  # Caches, models, and runtime records
+  - Cache
+  - CachedData
+  - CachedExtensionVSIXs
+  - GPUCache
+  - Crashpad
+  - "Local Storage"
+  - "Session Storage"
+  - "Service Worker"
+  - blob_storage
+  - shared_proto_db
+  - chatDictationModels
+  - models
+  - clipboard
+  - plugin-cache
+  - screen_recorder
+  - notification_history.json
+  - notification_history_assets
+
+  # Files and directories explicitly excluded from this archive
+  - QtProject.conf
+  - autostart
+  - kdeglobals

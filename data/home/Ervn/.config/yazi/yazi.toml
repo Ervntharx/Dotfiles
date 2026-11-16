@@ -1,0 +1,82 @@
+[mgr]
+show_hidden=true
+mouse_events = []
+linemode = "size"
+
+[[open.prepend_rules]]
+mime="image/*"
+use=[
+	"open_with_imv"
+]
+
+[[open.prepend_rules]]
+mime="video/*"
+use=[
+	"open_with_mpv"
+]
+
+[[open.prepend_rules]]
+url="*.md"
+use=[
+	"open_with_glow",
+	"edit_micro",
+	"edit_nvim",
+	"edit_code",
+]
+
+[[open.prepend_rules]]
+url="*"
+use=[
+	"edit_micro",
+	"edit_nvim"
+]
+
+[opener]
+
+edit_micro=[
+	{
+		run="micro %s",
+		desc="Open with Micro",
+		block=true,
+	}
+]
+
+edit_nvim=[
+	{
+		run="nvim %s",
+		desc="Open with neovim",
+		block=true,
+	}
+]
+
+edit_code=[
+	{
+		run="code \"$@\"",
+		desc="Open with vscode",
+		block=false,
+	}
+]
+
+open_with_imv=[
+	{
+		run="imv \"%s\"",
+		desc="Open with imv",
+		block=false,
+	}
+]
+
+open_with_mpv=[
+	{
+		run="mpv \"%s\"",
+		desc="Open with mpv",
+		block=false,
+	}
+]
+
+open_with_glow=[
+	{
+		run="glow \"%s\"",
+		desc="Open with glow",
+		block=true,
+	}
+]
