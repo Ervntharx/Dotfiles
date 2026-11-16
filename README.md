@@ -15,4 +15,5 @@ dotfile_refer.yaml中包含需要备份的配置文件目录和需要过滤的�
 
 ## 致谢
 
-Fcitx5 主题来自 [fovlin/fcitx5-theme-acovia](https://github.com/fovlin/fcitx5-theme-acovia)
+Fcitx5 主题来自 [fovlin/fcitx5-theme-acovia](https://github.com/fovlin/fcitx5-theme-acovia).
+neovim 配置来自[LazyVim](https://github.com/LazyVim/LazyVim?tab=Apache-2.0-1-ov-file).
